@@ -1,0 +1,54 @@
+.close-btn {
+  float: right;
+  margin-top: 12px;
+  margin-right: 12px;
+  width: 14px;
+  height: 14px;
+}
+// 邀请码
+.invitation-code {
+  margin: 26px 0 12px;
+  text-align: center;
+  font-size: 28px;
+  color: #1c064b;
+  letter-spacing: 2px;
+}
+.title {
+  margin: 0 20px;
+  font-size: 16px;
+  text-align: center;
+  color: #575757;
+}
+// 分享规则
+.rules {
+  margin: 16px 20px;
+  padding: 10px 16px;
+  list-style-position: inside;
+  background-color: #f6f6f6;
+  color: #333;
+  border-radius: 6px;
+  font-size: 14px;
+  li {
+    margin: 8px 0;
+  }
+}
+// 分享按钮
+.share-btns {
+  margin: 26px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .1);
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}

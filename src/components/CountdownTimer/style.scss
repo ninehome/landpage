@@ -1,0 +1,46 @@
+.timer-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #5cc7e4;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .semicircle {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+  }
+  .left {
+    left: 0;
+    border-top-left-radius: 100% 50%;
+    border-bottom-left-radius: 100% 50%;
+    background-color: #fff;
+    transform-origin: 100% 50%;
+  }
+  .right {
+    right: 0;
+    border-top-right-radius: 100% 50%;
+    border-bottom-right-radius: 100% 50%;
+    background-color: #fff;
+    transform-origin: 0 50%;
+  }
+  .text {
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 700;
+    color: #032e9d;
+    background-color: #fff;
+    z-index: 2;
+  }
+  .msg {
+    font-size: 10px;
+  }
+}
