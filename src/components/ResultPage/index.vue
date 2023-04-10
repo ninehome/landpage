@@ -10,17 +10,17 @@
         {{ text + '本场分数：' }}
         <span class="score">{{ score }}</span>
       </p>
-      <BeginButton
-        :propsStyle="{ backgroundColor: '#198cf9', color: '#fff' }"
-        @click.native="play"
-      >
-        再玩一局
-      </BeginButton>
+<!--      <BeginButton-->
+<!--        :propsStyle="{ backgroundColor: '#198cf9', color: '#fff' }"-->
+<!--        @click.native="play"-->
+<!--      >-->
+<!--        再玩一局-->
+<!--      </BeginButton>-->
       <BeginButton
         :propsStyle="{ backgroundColor: '#fd5b96', color: '#fff' }"
       >
         <router-link to="/share" class="btn">
-          邀请好友
+          联系客户经理，获得奖金
         </router-link>
       </BeginButton>
       <router-link to="/prize" class="tip">
