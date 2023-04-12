@@ -14,11 +14,11 @@ Mock.mock('/userinfo', 'get', {
   score: '@natural(0, 999)',
   gameNumber,
   practiceNumber,
-  prize: 1.5,
+  prize: 300,
   rank: 22,
   trailer: {
     time: new Date(2018, 2, 5, 21, 30),
-    prize: 200
+    prize: 300
   },
   messages: [
     '规则：完成15个问题，就能得到300卢布',

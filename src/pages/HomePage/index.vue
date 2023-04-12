@@ -10,9 +10,9 @@
       :src="musicIconSrc"
       alt="music"
     />
-    <router-link to="/invitation">
-      <button class="invite-code head-btn">填写邀请码</button>
-    </router-link>
+<!--    <router-link to="/invitation">-->
+<!--      <button class="invite-code head-btn">填写邀请码</button>-->
+<!--    </router-link>-->
     <router-link to="/rank">
       <button class="rank-list head-btn">排行榜&nbsp;<Icon class="icon" name="angle-right" /></button>
     </router-link>
@@ -20,25 +20,35 @@
     <section class="info-panel">
       <img class="avatar" v-lazy="headImgUrl" alt="头像">
       <div class="text-info">
-        <div>
-          <p class="title">剩余游戏次数</p>
-          <router-link to="/share">
-            <p class="content">
-              {{ gameNumber[0] }}/{{ gameNumber[1] }}&nbsp;
-              <Icon class="icon" name="angle-right" />
-            </p>
-          </router-link>
-        </div>
-        <div></div>
-        <div>
-          <p class="title">已获得奖金</p>
-          <router-link to="prize">
-            <p class="content">
-              &yen;&nbsp;{{ prize }}&nbsp;
-              <Icon class="icon" name="angle-right" />
-            </p>
-          </router-link>
-        </div>
+
+                <div>
+                  <p class="title">完成后得到奖金</p>
+                  <router-link to="prize">
+                    <p class="content">
+                      ₽ {{ prize }}&nbsp;
+                      <Icon class="icon" name="angle-right" />
+                    </p>
+                  </router-link>
+                </div>
+<!--        <div>-->
+<!--          <p class="title">剩余游戏次数</p>-->
+<!--          <router-link to="/share">-->
+<!--            <p class="content">-->
+<!--              {{ gameNumber[0] }}/{{ gameNumber[1] }}&nbsp;-->
+<!--              <Icon class="icon" name="angle-right" />-->
+<!--            </p>-->
+<!--          </router-link>-->
+<!--        </div>-->
+<!--        <div></div>-->
+<!--        <div>-->
+<!--          <p class="title">完成后得到奖金</p>-->
+<!--          <router-link to="prize">-->
+<!--            <p class="content">-->
+<!--              ₽{{ prize }}&nbsp;-->
+<!--              <Icon class="icon" name="angle-right" />-->
+<!--            </p>-->
+<!--          </router-link>-->
+<!--        </div>-->
       </div>
       <!--三个按钮-->
       <BeginButton
@@ -59,7 +69,7 @@
         @click.native="play('activity')"
         :propsStyle="{ backgroundColor: '#198cf9' }"
       >
-        <img class="activity-img" src="../../assets/activity.png" alt="begin">
+<!--        <img class="activity-img" src="../../assets/activity.png" alt="begin">-->
         <span class="activity-intro">
           <span>定期开启</span>
           <span>十分钟限时答题</span>
@@ -71,7 +81,7 @@
         <div class="content">
           <p>{{ trailerTime }}</p>
           <div></div>
-          <p>&yen;&nbsp;{{ trailerPrize }}&nbsp;奖金</p>
+          <p>₽ {{ trailerPrize }}&nbsp;奖金</p>
         </div>
       </div>
       <!--分割线-->

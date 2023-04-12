@@ -7,9 +7,13 @@ const path = require('path')
 module.exports = {
   dev: {
 
-    // Paths
+    // Paths  本地运行
     assetsSubDirectory: 'static',
-    assetsPublicPath: './',
+    assetsPublicPath: '/',
+
+    //打包运行
+    // assetsSubDirectory: '',
+    // assetsPublicPath: './',
     proxyTable: {},
 
     // Various Dev Server settings
@@ -49,8 +53,11 @@ module.exports = {
 
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
-    assetsSubDirectory: 'static',
-    assetsPublicPath: '/quiz-game/',
+    // assetsSubDirectory: 'static',
+    // assetsPublicPath: '/quiz-game/',
+
+    assetsSubDirectory: '',
+    assetsPublicPath: './',
 
     /**
      * Source Maps
